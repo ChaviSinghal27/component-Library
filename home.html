@@ -7,15 +7,185 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div>
-      <div><img src="home.png" class="background-img" /></div>
-      <div class="container">
-        <div class="logo-name">INFINTY UI</div>
-        <img src="LOGO.png" class="logo-img" />
-        <div class="home-text">THINK DESIGN</div>
-        <button class="home-button">
-          <a href="./index.html">GET STARTED</a>
-        </button>
+    <nav>
+      <div class="logo">
+        <a href="./index.html">Infinity UI</a>
+      </div>
+      <div>
+        <ul class="navbar__list">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="https://github.com/ChaviSinghal27">Docs</a></li>
+          <li><a href="https://github.com/ChaviSinghal27">GitHub</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="sidebar">
+        <ul class="sidebar__list">
+          <li><a href="#avatar">Avatar</a></li>
+          <li><a href="#alert">Alert</a></li>
+          <li><a href="#button">Button</a></li>
+          <li><a href="#card">Card</a></li>
+          <li><a href="#form">Form</a></li>
+          <li><a href="#toast">Toast</a></li>
+        </ul>
+        <ul class="socialmedia">
+          <li>
+            <a href="https://twitter.com/ChaviSinghal1"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/chavi-singhal/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/ChaviSinghal27"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mainbar">
+        <section>
+          <h1>Avatar</h1>
+          <h3>Here are avatars of various size</h3>
+          <div class="avatar" id="avatar">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+              class="avatar1"
+            />
+
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small_2x/beautiful-latin-woman-avatar-character-icon-free-vector.jpg"
+              class="avatar2"
+            />
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/002/002/427/small_2x/man-avatar-character-isolated-icon-free-vector.jpg"
+              class="avatar3"
+            />
+          </div>
+          <h3>Here are avatars of various size with badges</h3>
+          <div class="badge">
+            <div class="badge__">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                class="badge1"
+              />
+
+              <div class="red"></div>
+            </div>
+
+            <div class="badge__">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small_2x/beautiful-latin-woman-avatar-character-icon-free-vector.jpg"
+                class="badge2"
+              />
+              <div class="yellow"></div>
+            </div>
+
+            <div class="badge__">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/002/002/427/small_2x/man-avatar-character-isolated-icon-free-vector.jpg"
+                class="badge3"
+              />
+              <div class="green"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="alert" class="alert">
+          <h1>Alert</h1>
+          <h3>Here are alerts of various types</h3>
+          <div class="alert__component">
+            <h3 class="primary__alert">This is a primary alert</h3>
+            <h3 class="success__alert">This is a success alert</h3>
+            <h3 class="error__alert">This is a error alert</h3>
+            <h3 class="warning__alert">This is a warning alert</h3>
+            <h3 class="info__alert">This is a info alert</h3>
+          </div>
+        </section>
+        <section id="button">
+          <h1>Button</h1>
+          <button class="primary__button">Primary</button>
+          <button class="secondary__button">Seconday</button>
+          <button class="tertiory__button">Tertiory</button>
+          <button class="fancy__button">Fancy</button>
+        </section>
+        <section id="card">
+          <h1>Card</h1>
+          <h3>Vertical card</h3>
+          <div class="card">
+            <div><img src="woman.webp" class="card__img" /></div>
+            <div class="card__para">
+              <h3>Hi I am Day</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                consequuntur corporis recusandae suscipit eveniet quas
+                perspicia?
+              </p>
+            </div>
+          </div>
+          <h3>Horizontal card</h3>
+          <div class="horizontal__card">
+            <div>
+              <img src="woman.webp" class="horizontal__card__img" />
+            </div>
+            <div class="horizontal__card__para">
+              <h3>Hi I am Day</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                consequuntur corporis recusandae suscipit eveniet quas
+                perspicia?
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="form">
+          <h1>Form</h1>
+          <h1>log-in form</h1>
+          <form class="form">
+            <div class="form__">
+              <h1>Brand Name</h1>
+              <input placeholder="enter your name" class="name" />
+              <input placeholder="enter your password" class="password" />
+              <button class="log-in">log in</button>
+              <p>
+                If you dont have account
+                <a href="">
+                  <span style="color: var(--primary-color-light)">Sign-up</span>
+                </a>
+              </p>
+            </div>
+          </form>
+        </section>
+
+        <section id="toast" class="toast">
+          <h1>Toast</h1>
+          <div class="toast">
+            <button class="trigger-1"><a href="#toast-one">trigger</a></button>
+            <button class="trigger-2">trigger</button>
+            <button class="trigger-3">trigger</button>
+            <button class="trigger-4">trigger</button>
+            <button class="trigger-5">trigger</button>
+          </div>
+          <div class="toast-1" id="toast-one">
+            Woah! Look at me imma toast 🍞
+          </div>
+          <div class="toast-2" id="toast-two">
+            Woah! Look at me imma toast 🍞
+          </div>
+          <div class="toast-3" id="toast-three">
+            Woah! Look at me imma toast 🍞
+          </div>
+          <div class="toast-4" id="toast-four">
+            Woah! Look at me imma toast 🍞
+          </div>
+          <div class="toast-5" id="toast-five">
+            Woah! Look at me imma toast 🍞
+          </div>
+        </section>
       </div>
     </div>
   </body>
